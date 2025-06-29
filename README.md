@@ -1,5 +1,4 @@
 # Dimensionality Reduction API
-
 This project provides various dimensionality reduction techniques using a Python-based API. The Conda environment file (`dr_env.yml`) ensures consistent and reproducible dependencies.
 
 
@@ -94,3 +93,5 @@ I sincerely thank the authors of the following repositories for providing founda
 2. **Dimensionality Reduction techniques, including Tapkee build files and drtoolbox**  
    Repository: [mespadoto/proj-quant-eval](https://github.com/mespadoto/proj-quant-eval/blob/master/code/01_data_collection/projections.py)
 
+# dr-metric-selection
+A workflow for reducing bias in metric selection for benchmarking dimensionality reduction techniques, using empirical clustering to select sets of evaluation metrics.
