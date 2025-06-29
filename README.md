@@ -93,5 +93,16 @@ I sincerely thank the authors of the following repositories for providing founda
 2. **Dimensionality Reduction techniques, including Tapkee build files and drtoolbox**  
    Repository: [mespadoto/proj-quant-eval](https://github.com/mespadoto/proj-quant-eval/blob/master/code/01_data_collection/projections.py)
 
+
 # dr-metric-selection
 A workflow for reducing bias in metric selection for benchmarking dimensionality reduction techniques, using empirical clustering to select sets of evaluation metrics.
+
+### Projection Generator (`projection.py`)
+
+`projection.py` serves as the experimental driver.  
+For each of the **96 datasets** in `sampled_datasets`, the script generates **300 projections** by
+
+1. **Randomly selecting** one of the **40 dimensional-reduction techniques** implemented in `dr.py`; and  
+2. **Sampling each method’s hyper-parameters** uniformly within the ranges defined in **`_metadata.json`**.
+
+The resulting embeddings are stored in dataset-specific sub-directories, providing a large and diverse benchmark.
