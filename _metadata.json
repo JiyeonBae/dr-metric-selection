@@ -1,0 +1,166 @@
+{
+    "umap": {
+        "bounds": { "n_neighbors": [2, 100], "min_dist": [0.01, 0.99], "init": ["spectral", "random"] },
+        "default": { "n_neighbors": 15, "min_dist": 0.1, "init": "spectral" }
+    },
+    "pacmap": {
+        "bounds": { "n_neighbors": [2, 100], "MN_ratio": [0.1, 5.0], "FP_ratio": [0.1, 5.0] },
+        "default": { "n_neighbors": 10, "MN_ratio": 0.5, "FP_ratio": 2.0 }
+    },
+    "trimap": {
+        "bounds": { "n_inliers": [2, 100], "n_outliers": [2, 10] },
+        "default": { "n_inliers": 12, "n_outliers": 4 }
+    },
+    "tsne": {
+        "bounds": { "perplexity": [5, 50] },
+        "default": { "perplexity": 30 }
+    },
+    "umato": {
+        "bounds": { "n_neighbors": [2, 100], "min_dist": [0.01, 0.99], "hub_num": [20, 400] },
+        "default": { "n_neighbors": 15, "min_dist": 0.1, "hub_num": 200 }
+    },
+    "pca": {
+        "bounds": {},
+        "default": {}
+    },
+    "mds": {
+        "bounds": { "n_init": [2, 4], "max_iter": [300, 500] },
+        "default": { "n_init": 4, "max_iter": 300 }
+    },
+    "isomap": {
+        "bounds": { "n_neighbors": [2, 100] },
+        "default": { "n_neighbors": 5 }
+    },
+    "lle": {
+        "bounds": { "n_neighbors": [2, 100], "max_iter": [100, 200] },
+        "default": { "n_neighbors": 5, "max_iter": 100 }
+    },
+    "lamp": {
+        "bounds": {},
+        "default": {}
+    },
+    "lmds": {
+        "bounds": { "hub_num": [20, 400] },
+        "default": { "hub_num": 75 }
+    },
+    "ae": {
+        "bounds": { "model_size": ["SMALL", "MEDIUM", "LARGE"] },
+        "default": { "model_size": "SMALL" }
+    },
+    "fa": {
+        "bounds": { "max_iter": [1000, 2000] },
+        "default": { "max_iter": 100 }
+    },
+    "fica": {
+        "bounds": { "fun": ["logcosh", "exp"], "max_iter": [200, 400] },
+        "default": {"fun": "logcosh", "max_iter": 200 }
+    },
+    "grp": {
+        "bounds": {},
+        "default": {}
+    },
+    "hlle": {
+        "bounds": { "n_neighbors": [2, 100], "max_iter": [100, 200] },
+        "default": { "n_neighbors": 5, "max_iter": 100 }
+    },
+    "ipca": {
+        "bounds": {},
+        "default": {}
+    },
+    "kpcapol": {
+        "bounds": { "degree": [2, 5] },
+        "default": { "degree": 3 }
+    },
+    "kpcarbf": {
+        "bounds": {},
+        "default": {}
+    },
+    "kpcasig": {
+        "bounds": {},
+        "default": {}
+    },
+    "ltsa": {
+        "bounds": { "n_neighbors": [2, 100], "max_iter": [100, 200] },
+        "default": { "n_neighbors": 5, "max_iter": 100 }
+    },
+    "le": {
+        "bounds": {},
+        "default": {}
+    },
+    "mlle": {
+        "bounds": { "n_neighbors": [2, 100], "max_iter": [100, 200] },
+        "default": { "n_neighbors": 5,"max_iter": 100 }
+    },
+    "nmds": {
+        "bounds": { "n_init": [2, 4], "max_iter": [300, 500] },
+        "default": { "n_init": 4, "max_iter": 300 }
+    },
+    "nmf": {
+        "bounds": { "init": ["random", "nndsvdar"], "max_iter": [200, 400], "alpha": [0.0, 0.5], "l1_ratio": [0.0, 0.5]},
+        "default": { "init": "nndsvdar", "max_iter": 200, "alpha": 0.0, "l1_ratio": 0.0}
+    },
+    "spca": {
+        "bounds": { "alpha": [0.01, 0.5], "ridge_alpha": [0.05, 0.5], "max_iter": [1000, 2000]},
+        "default": { "alpha": 1, "ridge_alpha": 0.01, "max_iter": 1000 }
+    },
+    "srp": {
+        "bounds": {},
+        "default": {}
+    },
+    "tsvd": {
+        "bounds": { "n_iter": [5, 10] },
+        "default": { "n_iter": 5 }
+    },
+    "dm": {
+        "bounds": { "t": [2, 10], "width": [1.0, 10.0] },
+        "default": { "t": 2, "width": 1.0 }
+    },
+    "lltsa": {
+        "bounds": { "n_neighbors": [2, 100] },
+        "default": { "n_neighbors": 10 }
+    },
+    "tapkee_lmds": {
+        "bounds": { "n_neighbors": [2, 100] },
+        "default": { "n_neighbors": 10 }
+    },
+    "lpp": {
+        "bounds": { "n_neighbors": [2, 100] },
+        "default": { "n_neighbors": 10 }
+    },
+    "spe": {
+        "bounds": { "n_neighbors": [2, 100], "n_updates": [20, 70] },
+        "default": { "n_neighbors": 12, "n_updates": 20 }
+    },
+    "ppca": {
+        "bounds": { "max_iter": [200, 400] },
+        "default": { "max_iter": 200 }
+    },
+    "gda": {
+        "bounds": { "kernel": ["gauss", "linear"]},
+        "default": { "kernel": "gauss" }
+    },
+    "mcml": {
+        "bounds": {},
+        "default": {}
+    },
+    "llc": {
+        "bounds": { "k": [8, 12], "n_analyzers": [10, 20], "max_iter": [200, 400] },
+        "default": { "k": 12, "n_analyzers": 20, "max_iter": 200 }
+    },
+    "lmnn": {
+        "bounds": { "k": [3, 7] },
+        "default": { "k": 3 }
+    },
+    "mc": {
+        "bounds": { "n_analyzers": [10, 20], "max_iter": [200, 400] },
+        "default": { "n_analyzers": 40 }
+    },
+    "gplvm": {
+        "bounds": { "sigma": [0.5, 2.0] },
+        "default": { "sigma": 1.0 }
+    },
+    "lmvu": {
+        "bounds": { "k1": [3, 7], "k2": [8, 15] },
+        "default": { "k1": 3, "k2": 12 }
+    }
+}
