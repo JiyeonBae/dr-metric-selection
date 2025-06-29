@@ -8,8 +8,8 @@ from scipy.cluster.hierarchy import linkage, leaves_list, fcluster, dendrogram
 from matplotlib.colors import TwoSlopeNorm
 from matplotlib.patches import Rectangle, Patch
 
-correlation_dir = os.path.abspath("./correlation4")
-clustering_dir = os.path.join("./clustering10")
+correlation_dir = os.path.abspath("./correlation")
+clustering_dir = os.path.join("./clustering")
 os.makedirs(clustering_dir, exist_ok=True)
 
 avg_correlation_path = os.path.join(correlation_dir, 'average_correlation_matrix.csv')
