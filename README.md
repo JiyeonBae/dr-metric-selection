@@ -83,7 +83,7 @@ print("\nPaCMAP Result:", pacmap_result)
 ```
 
 # 2. DR Metric Selection
-A workflow for reducing bias in metric selection for benchmarking dimensionality reduction techniques, using empirical clustering to select sets of evaluation metrics.
+A workflow for reducing bias in metric selection for benchmarking dimensionality reduction techniques, using empirical clustering to select sets of evaluation metrics. Running the Python scripts in the order listed below will reproduce our entire workflow for metric selection and benchmarking.
 
 ## Step 1: Projection Generator (`projection.py`)
 
